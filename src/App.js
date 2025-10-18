@@ -223,8 +223,6 @@ function App() {
     {
       title: 'What is Monad?',
       content: `
-ChatGPT Plus
-
 Monad is a next-generation EVM-compatible Layer-1 blockchain designed for extreme scalability, offering around 10,000 transactions per second, sub-second finality near 800 milliseconds, and ultra-low gas fees while maintaining full compatibility with Ethereum bytecode and tools. It achieves this through parallel transaction execution, a custom high-performance database called MonadDB, and an optimized consensus and execution engine. The network aims to solve the blockchain scalability trilemma by combining high throughput, decentralization, and developer accessibility. For crypto builders and traders, Monad represents a high-performance infrastructure for DeFi, DePIN, and other high-volume on-chain applications with an easy migration path from Ethereum.`
     },
     {
@@ -642,7 +640,7 @@ if (isMobile) {
       justifyContent: "center",
       alignItems: "center",
       height: "100vh",
-      backgroundColor: "#000",
+      backgroundColor: "#340285",
       color: "#fff",
       flexDirection: "column",
       textAlign: "center",
