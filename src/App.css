@@ -1,0 +1,147 @@
+
+b {
+    color: #3925ad;
+
+
+}
+
+b.live {
+  color: #1be600;
+
+}
+
+b.soon {
+  color: #b3b3b3;
+
+}
+
+s {
+  color: #1ade00;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+c {
+  font-style: italic;
+  color: #474747;
+}
+
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(calc(-210px*16));
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .separator {
+    background-color: #340285;
+    overflow: hidden;
+    height: 60px;
+    width: 100vw; /* Ocupa toda la pantalla horizontal */
+    display: flex;
+    align-items: center;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .marquee-content {
+    display: inline-flex;
+    animation: scroll-left 50s linear infinite;
+    align-items: center;
+  }
+  
+  .item {
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    color: white;
+    margin: 0 12px;
+    white-space: nowrap;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 12px;
+    object-fit: contain;
+  }
+    
+  @keyframes scroll-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  
+  .accordion {
+    width: 1200px;
+  }
+  
+  .accordion-title {
+    font-family: 'Saira', sans-serif;
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    color: #ffffff;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #340285;
+    border-bottom: 2px solid #b4b4b4;
+    letter-spacing: 2px;
+  }
+  
+  .accordion-title:hover {
+    background-color: #8271df;
+  }
+  
+  .accordion-title,
+  .accordion-content {
+    padding: 2rem;
+  }
+  
+  .accordion-content {
+    background-color: #340285;
+    border-bottom: 2px solid #b4b4b4;
+    font-family: 'Saira', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.8;
+    letter-spacing: 2px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    body {
+      font-size: 20px;
+    }
+  
+    .accordion {
+      width: 90%;
+    }
+  }
+
+  .team {
+    justify-content: center;
+  }
+
+  .tm:not(:first-child):not(:last-child) {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
