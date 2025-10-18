@@ -647,6 +647,9 @@ if (isMobile) {
       fontFamily: "Saira, sans-serif",
       padding: "20px"
     }}>
+      <StyledLogo
+              src={"/config/images/logo.png"}
+                />
       <h1 style={{ fontSize: "28px", marginBottom: "10px" }}>Our mint website is currently designed for desktop</h1>
       <p style={{ fontSize: "18px" }}>A mobile version is coming soon!</p>
     </div>
