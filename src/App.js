@@ -650,8 +650,8 @@ if (isMobile) {
       <StyledLogo
               src={"/config/images/logo.png"}
                 />
-      <h1 style={{ fontSize: "28px", marginBottom: "10px", marginTop: "20px" }}>Our mint website is currently designed for desktop</h1>
-      <p style={{ fontSize: "18px" }}>A mobile version is coming soon!</p>
+      <h1 style={{ fontSize: "28px", marginBottom: "10px", marginTop: "40px" }}>Our mint website is currently designed for desktop</h1>
+      <p style={{ fontSize: "18px" }}>A mobile version is coming very soon!</p>
     </div>
   );
 }
